@@ -1,0 +1,264 @@
+@import url(style.css);
+
+@media (max-width: 430px) {
+    html {
+        scroll-snap-type: none;
+    }
+
+    html section:not(.experience-container) {
+        scroll-snap-align: none;
+    }
+
+    body {
+        background-image: url(images/waves-mobile.svg);
+        background-size: cover;
+        background-color: black;
+    }
+
+    .container {
+        max-width: 370px;
+    }
+
+    .container-header {
+        display: flex;
+        padding: 1em 0em;
+        max-width: 370px;
+        margin: auto;
+        justify-content: space-between;
+    }
+
+    .fa-bars {
+        display: block !important;
+        color: var(--blue);
+    }
+
+    nav {
+        display: none;
+        order: 3;
+        width: 100%;
+        padding: 1em 0em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        width: 100%;
+    }
+
+    .hero {
+        padding-top: 6em;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+        margin-bottom: 5em;
+    }
+
+    .hero-content {
+        width: 100%;
+        height: auto;
+        gap: 0em;
+
+        & p {
+            font-size: 1rem;
+        }
+
+        & figure {
+            width: 70%;
+            margin: auto;
+        }
+    }
+
+    .hero-photo {
+        width: 100%;
+    }
+
+    .hero-photo {
+        display: none;
+    }
+
+    .foto-mobile {
+        display: block;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 2em;
+        /* clip-path: circle(50% at 50% 50%); */
+        object-fit: contain;
+    }
+
+    .hero-content p {
+        width: 100%;
+    }
+
+    .skillset-container {
+        padding: 2em;
+        gap: 1em;
+    }
+
+    .skillset-title {
+        width: 100%;
+
+        & h2 {
+            font-size: 2rem;
+        }
+
+        & h3 {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            text-wrap: balance;
+        }
+
+        & p {
+            text-wrap: balance;
+        }
+    }
+
+    .skillset-content {
+        width: 100%;
+    }
+
+    .education {
+        width: 100%;
+        gap: 2em;
+        scroll-snap-align: center;
+        height: 100vh;
+    }
+
+    .experience-container {
+        flex-direction: column;
+        height: 200vh;
+        padding: 0em;
+    }
+
+    .experience {
+        width: 100%;
+        gap: 2em;
+        scroll-snap-align: center;
+        height: 100vh;
+    }
+
+    .bg-experience {
+        height: 250px;
+    }
+
+    .card-experience {
+        width: 100%;
+        height: 250px;
+    }
+
+    .projects-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2em;
+
+        & h2 {
+            font-size: 3em;
+            line-height: 2.5em;
+        }
+    }
+
+    .projects-container {
+        height: auto;
+        padding-bottom: 15em;
+
+        & h2 {
+            padding-top: 0em;
+        }
+    }
+
+    .project-card {
+        width: 80%;
+    }
+
+    .testimonials-container {
+
+        margin-bottom: 8em;
+
+        & h2 {
+            line-height: 1em;
+            padding-bottom: 1em;
+        }
+    }
+
+    .testimonials-card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2em;
+    }
+
+    .bg-testimonial-figure {
+        width: 50%;
+        height: 200px;
+    }
+
+    .testimonials-content {
+        width: 80%;
+
+    }
+
+    .testimonials-figure {
+        width: 100%;
+        height: 200px;
+
+        & .testimonials-img {
+            width: 100%;
+        }
+    }
+
+    .slide {
+        overflow: hidden;
+        min-width: 100%;
+        padding: 0px;
+        scroll-snap-align: start;
+    }
+
+    #slide-container {
+        width: 430px;
+    }
+
+    .contact-content form {
+        width: 100%;
+    }
+
+    .contact-socials {
+        width: 100%;
+        gap: 1em;
+        align-items: center;
+        padding: 1em 0em;
+
+        & span {
+            width: 100%;
+            font-size: 2rem;
+            line-height: 2.9rem;
+            text-align: center;
+            order: 2;
+        }
+    }
+
+    .contact-buttons {
+        justify-content: space-between;
+        order: 1;
+    }
+
+    .faq-content {
+        flex-wrap: wrap;
+    }
+
+    .faq-cards {
+        width: 100%;
+    }
+
+    .faq-photos {
+        width: 100%;
+    }
+
+}
