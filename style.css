@@ -261,21 +261,11 @@ li:hover a:before {
 
 
 .hero {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: center;
-    padding-top: 4em;
-}
-
-.hero-content {
-    width: 50%;
-    height: 514px;
     display: flex;
     flex-direction: column;
-    gap: 1em;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
 
     & h2 {
         font-size: 2rem;
@@ -283,50 +273,62 @@ li:hover a:before {
 
     & h1 {
         font-size: 6rem;
-        line-height: 5rem;
+        line-height: 4.4rem;
         color: var(--blue);
         font-family: 'Lilita One', sans-serif;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
         font-weight: lighter;
     }
 
     & p {
         font-size: 1.2rem;
         width: 80%;
-        margin-bottom: .5em;
+    }
+}
+
+.hero-presentation {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+
+    & div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+}
+
+.hero-description {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+
+    & p {
+        text-wrap: pretty;
+        width: 100%;
     }
 
     & a {
-        margin-top: .5em;
         display: inline-block;
         text-decoration: none;
         color: white;
-        padding: .5em 2em;
-        background-color: var(--blue);
-        width: fit-content;
-        border-radius: 1em;
-        color: black;
-        font-weight: bold;
+        font-size: 1.2rem;
+
+        & :nth-child(1) {
+            margin-right: 10px;
+        }
+
+        & i {
+            color: var(--blue);
+            font-size: 2.2rem;
+        }
     }
 }
 
 .hero-photo {
-    width: 50%;
-    display: flex;
-    justify-content: center;
-
-    & figure img {
-        width: 100%;
-        height: auto;
-        aspect-ratio: 1/1;
-        object-fit: cover;
-    }
-
-    & figure {
-        position: relative;
-        width: fit-content;
-        display: flex;
-    }
+    max-width: 120px;
 }
 
 .foto-mobile {
@@ -854,7 +856,8 @@ li:hover a:before {
 .faq-content {
     display: flex;
     width: 100%;
-    gap: 1em;
+    gap: 10em;
+    align-items: center;
 }
 
 .faq-cards {
@@ -866,6 +869,10 @@ li:hover a:before {
 
 .faq-photos {
     width: 50%;
+
+    & img {
+        max-width: 300px;
+    }
 }
 
 .card {
