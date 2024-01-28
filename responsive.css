@@ -1,29 +1,10 @@
 @import url(style.css);
 
-@media (max-width: 430px) {
-    html {
-        scroll-snap-type: none;
-    }
-
-    html section:not(.experience-container) {
-        scroll-snap-align: none;
-    }
-
-    body {
-        background-image: url(images/waves-mobile.svg);
-        background-size: cover;
-        background-color: black;
-    }
-
-    .container {
-        max-width: 370px;
-    }
-
+@media (max-width: 627px) {
     .container-header {
         display: flex;
-        padding: 1em 0em;
-        max-width: 370px;
-        margin: auto;
+        padding: 1em;
+        max-width: 90%;
         justify-content: space-between;
     }
 
@@ -53,12 +34,16 @@
     }
 
     .hero {
-        padding-top: 6em;
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 2em;
         margin-bottom: 5em;
+    }
+
+    .hero-presentation,
+    .hero-description {
+        width: 100%;
     }
 
     .hero-content {
@@ -76,21 +61,12 @@
         }
     }
 
-    .hero-photo {
+    .hero-description p {
         width: 100%;
     }
 
     .hero-photo {
-        display: none;
-    }
-
-    .foto-mobile {
-        display: block;
-        width: 70%;
-        margin: auto;
-        margin-bottom: 2em;
-        /* clip-path: circle(50% at 50% 50%); */
-        object-fit: contain;
+        width: 100%;
     }
 
     .hero-content p {
@@ -128,12 +104,10 @@
         width: 100%;
         gap: 2em;
         scroll-snap-align: center;
-        height: 100vh;
     }
 
     .experience-container {
         flex-direction: column;
-        height: 200vh;
         padding: 0em;
     }
 
@@ -141,16 +115,10 @@
         width: 100%;
         gap: 2em;
         scroll-snap-align: center;
-        height: 100vh;
-    }
-
-    .bg-experience {
-        height: 250px;
     }
 
     .card-experience {
         width: 100%;
-        height: 250px;
     }
 
     .projects-box {
@@ -261,4 +229,46 @@
         width: 100%;
     }
 
+    .timeline {
+        grid-template-columns: 50px 3px 1fr;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .timeline__date {
+        padding-top: 20px;
+        font-size: 20px;
+        writing-mode: vertical-lr;
+    }
+
+    .timeline__component {
+        margin: 0 0px 20px 20px;
+    }
+
+}
+
+/* @media (max-width:432px) {
+    .hero-presentation {
+        flex-wrap: wrap;
+    }
+
+    .hero-photo {
+        margin: auto;
+    }
+}
+
+@media (max-width: 685px) {
+    .hero-description p {
+        width: 90%;
+    }
+
+    .hero-presentation {
+        width: 90%;
+    }
+} */
+
+@media (max-width: 1198px) {
+    .container {
+        width: 90% !important;
+    }
 }

@@ -16,26 +16,19 @@
 
 <body>
     <a href="#" id="top"></a>
-    <header class="header">
-        <div class="container-header">
-            <i class="fa-solid fa-bars" id="menuicon"></i>
-            <nav id="menucontainer">
-                <ul>
-                    <li><a href="#skillset">SKILLSET</a></li>
-                    <li><a href="#experience">EXPERIENCE</a></li>
-                    <li><a href="#projects">PROJECTS</a></li>
-                    <li><a href="#testimonials">TESTIMONIALS</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                    <li><a href="#contact">CONTACT</a></li>
-                </ul>
-            </nav>
-            <div class="mode">
-                <i class="fa-solid fa-sun"></i>
-                <div class="div toggle"><a href="#" id="toggle"><i class="fa-solid fa-toggle-on"></i></a></div>
-                <i class="fa-solid fa-moon"></i>
-            </div>
-        </div>
-    </header>
+    <div class="container-header container">
+        <i class="fa-solid fa-bars" id="menuicon"></i>
+        <nav id="menucontainer">
+            <ul>
+                <li><a href="#skillset">SKILLSET</a></li>
+                <li><a href="#experience">EXPERIENCE</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#testimonials">TESTIMONIALS</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
 
     <section class="hero container">
         <div class="hero-presentation">
@@ -46,14 +39,21 @@
             <img src="images/pfp-pc.png" alt="" class="hero-photo">
         </div>
         <div class="hero-description">
-            <p>I'm a frontend developer shaping the future of software by crafting seamless user interfaces that
+            <p>I'm a <span class="blue">frontend developer</span> shaping the future of software by crafting seamless
+                user interfaces that
                 encourage interaction with data and information.</p>
 
             <p>When I'm not immersed in the world of technology, you'll find me exploring melodies and rhythms or
                 embarking on epic video game adventures.</p>
             <div class="hero-socials">
-                <a href=""><i class="fa-brands fa-square-github"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/CarlosLoriaR" target="_blank">
+                    <i class="fa-brands fa-square-github"></i>
+                    <span>Github</span>
+                </a>
+                <a href="https://www.linkedin.com/in/carlos-lor%C3%ADa-51b6a9252/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
             </div>
         </div>
     </section>
@@ -83,51 +83,56 @@
         </div>
     </section>
 
-    <section class="experience-container container" id="experience">
-        <article class="education">
-            <h2 class="blue">EDUCATION</h2>
-            <div class="bg-experience">
-                <div class="card-experience">
-                    <h3 class="blue">Centro de Estudios de Las Américas</h3>
-                    <span>HIGH SCHOOL</span>
-                    <br><br>
-                    <p>Lorem Ipsum Commodo Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor
-                        Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam</p>
-                </div>
+    <section class="experience-section container" id="experience">
+        <h2 class="blue">EXPERIENCE</h2>
+        <div class="timeline">
+            <div class="timeline__component">
+                <div class="timeline__date timeline__date--right">Currently</div>
             </div>
-            <div class="bg-experience">
-                <div class="card-experience">
-                    <h3 class="blue">Instituto Tecnológico de Mérida</h3>
-                    <span>COLLEGE</span>
-                    <br><br>
-                    <p>Lorem Ipsum Commodo Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor
-                        Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam</p>
-                </div>
+            <div class="timeline__middle">
+                <div class="timeline__point"></div>
             </div>
-        </article>
+            <div class="timeline__component timeline__component--bg">
+                <h3 class="timeline__title">QA SPECIALIST</h3>
+                <p class="timeline__paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id tempora cumque aliquid?
+                </p>
+            </div>
+            <div class="timeline__component">
+                <div class="timeline__date timeline__date--right">February 2024</div>
+            </div>
+            <div class="timeline__middle">
+                <div class="timeline__point"></div>
+            </div>
+            <div class="timeline__component timeline__component--bg">
+                <h3 class="timeline__title">International Conference on Cased Based Reasoning 2024</h3>
+                <p class="timeline__paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni tempore adipisci eveniet aut possimus
+                    dolores, dolorem molestiae atque perferendis. Ullam quo voluptatem vitae laudantium ab aut beatae
+                    eligendi sunt enim?
+                </p>
+            </div>
 
-
-        <article class="experience">
-            <h2 class="blue">EXPERIENCE</h2>
-            <div class="bg-experience">
-                <div class="card-experience">
-                    <h3 class="blue">SCALE AI</h3>
-                    <span>QA SPECIALIST</span>
-                    <br><br>
-                    <p>Lorem Ipsum Commodo Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor
-                        Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam</p>
-                </div>
+            <div class="timeline__component">
+                <div class="timeline__date timeline__date--right">December 2023</div>
             </div>
-            <div class="bg-experience">
-                <div class="card-experience">
-                    <h3 class="blue">ICCBR 2024</h3>
-                    <span>FRONTEND DEVELOPER</span>
-                    <br><br>
-                    <p>Lorem Ipsum Commodo Dolor Sit Amet, Consectetur Adipisicing Elit, Sed Do Eiusmod Tempor
-                        Incididunt Ut Labore Et Dolore Magna Aliqua. Ut Enim Ad Minim Veniam</p>
-                </div>
+            <div class="timeline__middle">
+                <div class="timeline__point"></div>
             </div>
-        </article>
+            <div class="timeline__component timeline__component--bg">
+                <h3 class="timeline__title">Computer Science Degree</h3>
+                <p class="timeline__paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam omnis, doloribus maiores quae nulla
+                    itaque mollitia tempore repellat est incidunt!
+                </p>
+            </div>
+            <div class="timeline__component">
+                <div class="timeline__date timeline__date--right"></div>
+            </div>
+            <div class="timeline__middle">
+                <div class="timeline__point"></div>
+            </div>
+        </div>
     </section>
 
     <section class="projects-container container" id="projects">
@@ -294,99 +299,7 @@
         </div>
     </section>
 
-    <section class="testimonials-container container" id="carousel">
-        <h2 class="blue" id="testimonials">TESTIMONIALS</h2>
-        <div id="slide-container">
-            <div class="testimonials-card slide" data-slideIndex="0">
-                <div class="bg-testimonial-figure">
-                    <figure class="testimonials-figure"><img src="images/client1.png" alt="" class="testimonials-img">
-                    </figure>
-                </div>
-                <article class="testimonials-content">
-                    <p><i class="fa-solid fa-quote-left"></i> Carlos is an exceptional frontend developer. He
-                        transformed
-                        our
-                        design concepts into a visually
-                        stunning and responsive website, demonstrating impressive attention to detail and timely
-                        delivery.
-                        His expertise and collaborative approach make them a standout choice for any project. <i
-                            class="fa-solid fa-quote-right"></i></p>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h3>Sylvia H. Green</h3>
-                    <h4>Client</h4>
-                </article>
-            </div>
-            <div class="testimonials-card slide" data-slideIndex="1">
-                <div class="bg-testimonial-figure">
-                    <figure class="testimonials-figure"><img src="images/client2.jpg" alt="" class="testimonials-img">
-                    </figure>
-                </div>
-                <article class="testimonials-content">
-                    <p><i class="fa-solid fa-quote-left"></i> Carlos is an exceptional frontend developer. He
-                        transformed
-                        our
-                        design concepts into a visually
-                        stunning and responsive website, demonstrating impressive attention to detail and timely
-                        delivery.
-                        His expertise and collaborative approach make them a standout choice for any project. <i
-                            class="fa-solid fa-quote-right"></i></p>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h3>Sylvia H. Green</h3>
-                    <h4>Client</h4>
-                </article>
-            </div>
-            <div class="testimonials-card slide" data-slideIndex="2">
-                <div class="bg-testimonial-figure">
-                    <figure class="testimonials-figure"><img src="images/client3.jpg" alt="" class="testimonials-img">
-                    </figure>
-                </div>
-                <article class="testimonials-content">
-                    <p><i class="fa-solid fa-quote-left"></i> Carlos is an exceptional frontend developer. He
-                        transformed
-                        our
-                        design concepts into a visually
-                        stunning and responsive website, demonstrating impressive attention to detail and timely
-                        delivery.
-                        His expertise and collaborative approach make them a standout choice for any project. <i
-                            class="fa-solid fa-quote-right"></i></p>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                    </div>
-                    <h3>Sylvia H. Green</h3>
-                    <h4>Client</h4>
-                </article>
-            </div>
-        </div>
-        <div class="slide-buttons">
-        </div>
-        <div id="back-button" class="arrow back">
-            <i class="fa-solid fa-chevron-left"></i>
-        </div>
-        <div id="forward-button" class="arrow forward">
-            <i class="fa-solid fa-chevron-right"></i>
-        </div>
-        <div class="slide-indicators">
-            <div class="slide-indicator active"></div>
-            <div class="slide-indicator"></div>
-            <div class="slide-indicator"></div>
-        </div>
-    </section>
+
 
     <section class="faq-container container" id="faq">
         <h2 class="blue">FAQ</h2>
@@ -450,7 +363,7 @@
                 <textarea name="" id="message" cols="30" rows="10"></textarea>
             </form>
             <div class="contact-socials">
-                <span>LET'S WORK TOGETHER!</span>
+                <span></span>
                 <div class="contact-buttons">
                     <button type="submit" form="contact-form">Submit</button>
                     <a href="https://github.com/CarlosLoriaR" target="_blank"><i
@@ -464,17 +377,7 @@
     </section>
 
     <a href="#top" class="arrow-up"><i class="fa-solid fa-circle-arrow-up"></i></a>
-
     <script>
-        /* DARK MODE AND LIGHT MODE TOGGLER*/
-        $(".toggle").click(function () {
-            var clickeado = $(this);
-            var icono = clickeado.children('a').children('i');
-            $(".mode a i").not(icono).removeClass('fa-toggle-on').addClass
-                ('fa-toggle-off');
-            icono.toggleClass('fa-toggle-on fa-toggle-off');
-            document.body.classList.toggle("light-mode");
-        });
         /* RESPONSIVE MENU*/
         $("#menuicon").click(function () {
             $("#menucontainer").slideToggle();
@@ -507,22 +410,6 @@
 
             hijoclickeado.slideToggle();
             icono.toggleClass('fa-square-minus fa-square-plus');
-        });
-
-        $(function () {
-            $("#slider4").responsiveSlides({
-                auto: false,
-                pager: false,
-                nav: true,
-                speed: 500,
-                namespace: "callbacks",
-                before: function () {
-                    $('.events').append("<li>before event fired.</li>");
-                },
-                after: function () {
-                    $('.events').append("<li>after event fired.</li>");
-                }
-            });
         });
     </script>
 </body>
