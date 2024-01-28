@@ -1,11 +1,13 @@
 @import url(style.css);
 
 @media (max-width: 627px) {
+
     .container-header {
         display: flex;
         padding: 1em;
         max-width: 90%;
-        justify-content: space-between;
+        justify-content: flex-start;
+        margin: 20px;
     }
 
     .fa-bars {
@@ -33,12 +35,17 @@
         width: 100%;
     }
 
+    section {
+        padding: 4em 0em;
+    }
+
     .hero {
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         gap: 2em;
         margin-bottom: 5em;
+        padding: 0px;
     }
 
     .hero-presentation,
