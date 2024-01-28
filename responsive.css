@@ -4,10 +4,17 @@
 
     .container-header {
         display: flex;
-        padding: 1em;
         max-width: 90%;
-        justify-content: flex-start;
-        margin: 20px;
+        background-color: transparent;
+        padding: 0px 0px;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    nav ul li a {
+        padding: 0px 0px;
     }
 
     .fa-bars {
@@ -43,41 +50,32 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        gap: 2em;
+        gap: .7em;
         margin-bottom: 5em;
         padding: 0px;
-    }
 
-    .hero-presentation,
-    .hero-description {
-        width: 100%;
-    }
-
-    .hero-content {
-        width: 100%;
-        height: auto;
-        gap: 0em;
-
-        & p {
-            font-size: 1rem;
+        & h1 {
+            font-size: 3.3rem;
         }
 
-        & figure {
-            width: 70%;
-            margin: auto;
+        & h2 {
+            font-size: 1.5rem;
         }
     }
 
     .hero-description p {
         width: 100%;
+        font-size: 1rem;
     }
 
-    .hero-photo {
-        width: 100%;
+    .hero-socials a i {
+        font-size: 1.5rem;
     }
 
-    .hero-content p {
-        width: 100%;
+    .hero-socials a {
+        font-size: 1rem;
+        padding: 5px 10px;
+        font-weight: normal;
     }
 
     .skillset-container {
@@ -107,27 +105,6 @@
         width: 100%;
     }
 
-    .education {
-        width: 100%;
-        gap: 2em;
-        scroll-snap-align: center;
-    }
-
-    .experience-container {
-        flex-direction: column;
-        padding: 0em;
-    }
-
-    .experience {
-        width: 100%;
-        gap: 2em;
-        scroll-snap-align: center;
-    }
-
-    .card-experience {
-        width: 100%;
-    }
-
     .projects-box {
         display: flex;
         flex-direction: column;
@@ -142,65 +119,14 @@
 
     .projects-container {
         height: auto;
-        padding-bottom: 15em;
 
         & h2 {
             padding-top: 0em;
         }
     }
 
-    .project-card {
-        width: 80%;
-    }
-
-    .testimonials-container {
-
-        margin-bottom: 8em;
-
-        & h2 {
-            line-height: 1em;
-            padding-bottom: 1em;
-        }
-    }
-
-    .testimonials-card {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2em;
-    }
-
-    .bg-testimonial-figure {
-        width: 50%;
-        height: 200px;
-    }
-
-    .testimonials-content {
-        width: 80%;
-
-    }
-
-    .testimonials-figure {
-        width: 100%;
-        height: 200px;
-
-        & .testimonials-img {
-            width: 100%;
-        }
-    }
-
-    .slide {
-        overflow: hidden;
-        min-width: 100%;
-        padding: 0px;
-        scroll-snap-align: start;
-    }
-
-    #slide-container {
-        width: 430px;
-    }
-
     .contact-content form {
+        display: grid;
         width: 100%;
     }
 
@@ -224,16 +150,8 @@
         order: 1;
     }
 
-    .faq-content {
-        flex-wrap: wrap;
-    }
-
-    .faq-cards {
-        width: 100%;
-    }
-
-    .faq-photos {
-        width: 100%;
+    .contact-socials img {
+        order: 2;
     }
 
     .timeline {
@@ -254,28 +172,8 @@
 
 }
 
-/* @media (max-width:432px) {
-    .hero-presentation {
-        flex-wrap: wrap;
-    }
-
-    .hero-photo {
-        margin: auto;
-    }
-}
-
-@media (max-width: 685px) {
-    .hero-description p {
-        width: 90%;
-    }
-
-    .hero-presentation {
-        width: 90%;
-    }
-} */
-
 @media (max-width: 1198px) {
     .container {
-        width: 90% !important;
+        width: 95% !important;
     }
 }
