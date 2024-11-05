@@ -409,10 +409,9 @@ nav ul li a {
 }
 
 .contact-socials {
-    width: 50%;
     display: flex;
     flex-direction: column;
-    align-items: end;
+    align-items: center;
     gap: 1em;
     justify-content: center;
 
