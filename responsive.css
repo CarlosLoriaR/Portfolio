@@ -1,5 +1,7 @@
 @import url(style.css);
 
+
+
 @media (max-width: 627px) {
 
     .container-header {
@@ -65,7 +67,7 @@
 
     .hero-description p {
         width: 100%;
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .hero-socials a i {
