@@ -1,0 +1,161 @@
+@import url(style.css);
+
+
+
+@media (max-width: 627px) {
+
+    .container-header {
+        display: flex;
+        max-width: 90%;
+        background-color: transparent;
+        padding: 0px 0px;
+
+        &:hover {
+            background-color: transparent;
+        }
+    }
+
+    nav ul li a {
+        padding: 0px 0px;
+    }
+
+    .fa-bars {
+        display: block !important;
+        color: var(--blue);
+    }
+
+    nav {
+        display: none;
+        order: 3;
+        width: 100%;
+        padding: 1em 0em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    nav ul li {
+        width: 100%;
+    }
+
+    nav ul li a {
+        width: 100%;
+    }
+
+    section {
+        padding: 4em 0em;
+    }
+
+    .hero {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: .7em;
+        margin-bottom: 5em;
+        padding: 0px;
+
+        & h1 {
+            font-size: 3.3rem;
+        }
+
+        & h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .hero-description p {
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .hero-socials a i {
+        font-size: 1.5rem;
+    }
+
+    .hero-socials a {
+        font-size: 1rem;
+        padding: 5px 10px;
+        font-weight: normal;
+    }
+
+    .skillset-container {
+        padding: 2em;
+        gap: 1em;
+    }
+
+    .skillset-title {
+        width: 100%;
+
+        & h2 {
+            font-size: 2rem;
+        }
+
+        & h3 {
+            font-size: 1.3rem;
+            line-height: 2rem;
+            text-wrap: balance;
+        }
+
+        & p {
+            text-wrap: balance;
+        }
+    }
+
+    .skillset-content {
+        width: 100%;
+    }
+
+    .contact-content form {
+        display: grid;
+        width: 100%;
+    }
+
+    .contact-socials {
+        width: 100%;
+        gap: 1em;
+        align-items: center;
+        padding: 1em 0em;
+
+        & span {
+            width: 100%;
+            font-size: 2rem;
+            line-height: 2.9rem;
+            text-align: center;
+            order: 2;
+        }
+    }
+
+    .contact-buttons {
+        justify-content: space-between;
+        order: 1;
+    }
+
+    .contact-socials img {
+        order: 2;
+    }
+
+    .timeline {
+        grid-template-columns: 50px 3px 1fr;
+        width: 100%;
+        padding: 0px;
+    }
+
+    .timeline__date {
+        padding-top: 20px;
+        font-size: 20px;
+        writing-mode: vertical-lr;
+    }
+
+    .timeline__component {
+        margin: 0 0px 20px 20px;
+    }
+
+}
+
+@media (max-width: 1198px) {
+    .container {
+        width: 95% !important;
+    }
+}
