@@ -389,7 +389,8 @@ nav ul li a {
 }
 
 
-.experience-section {
+.experience-section,
+.education-section {
     display: flex;
     flex-direction: column;
 
