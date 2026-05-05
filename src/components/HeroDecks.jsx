@@ -40,7 +40,10 @@ export default function HeroDecks() {
             CUE
           </button>
           <button className="bg-[#00CCFF] border border-[#00CCFF] px-4 py-1 text-label-bold text-black uppercase flex items-center gap-2 hover:bg-[#00B8E6] transition-colors">
-            <span className="material-symbols-outlined text-sm">play_arrow</span> PLAY
+            <span className="material-symbols-outlined text-sm">
+              play_arrow
+            </span>{" "}
+            PLAY
           </button>
         </div>
       </div>
@@ -56,7 +59,7 @@ export default function HeroDecks() {
               Professional Mode
             </h2>
             <p className="text-[#D30017] text-label-bold">
-              STATUS: READY FOR HIRE
+              STATUS: READY TO WORK
             </p>
           </div>
           <div className="text-right">
@@ -69,7 +72,7 @@ export default function HeroDecks() {
           <div className="bg-[#1E1E1E] border border-[#2A2A2A] p-2 flex flex-col justify-center">
             <p className="text-[10px] text-gray-500 uppercase">Key Signature</p>
             <p className="text-white font-mono-data text-lg text-[#FFD44F]">
-              TS-2024
+              EDM
             </p>
           </div>
           <div className="bg-[#1E1E1E] border border-[#2A2A2A] p-2 flex flex-col justify-center">

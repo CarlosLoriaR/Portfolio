@@ -36,7 +36,6 @@ export default function SideNavBar({ onSectionChange }) {
         <p className="font-label-bold text-[#00CCFF] text-[10px] tracking-widest uppercase">
           Browser
         </p>
-        <p className="font-mono-data text-gray-500 text-[10px]">Portfolio</p>
       </div>
       <nav className="flex flex-col flex-1">
         {navItems.map((item) => (
@@ -80,25 +79,33 @@ export default function SideNavBar({ onSectionChange }) {
               <span className="material-symbols-outlined text-sm text-gray-500">
                 folder
               </span>
-              <p className="text-gray-400 text-[10px] font-mono-data">Documents</p>
+              <p className="text-gray-400 text-[10px] font-mono-data">
+                Documents
+              </p>
             </div>
             <div className="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-[#2A2A2A] rounded transition-colors">
               <span className="material-symbols-outlined text-sm text-gray-500">
                 folder
               </span>
-              <p className="text-gray-400 text-[10px] font-mono-data">Downloads</p>
+              <p className="text-gray-400 text-[10px] font-mono-data">
+                Downloads
+              </p>
             </div>
             <div className="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-[#2A2A2A] rounded transition-colors">
               <span className="material-symbols-outlined text-sm text-gray-500">
                 folder
               </span>
-              <p className="text-gray-400 text-[10px] font-mono-data">Projects</p>
+              <p className="text-gray-400 text-[10px] font-mono-data">
+                Projects
+              </p>
             </div>
             <div className="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-[#2A2A2A] rounded transition-colors">
               <span className="material-symbols-outlined text-sm text-gray-500">
                 folder
               </span>
-              <p className="text-gray-400 text-[10px] font-mono-data">Desktop</p>
+              <p className="text-gray-400 text-[10px] font-mono-data">
+                Desktop
+              </p>
             </div>
             <div className="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-[#2A2A2A] rounded transition-colors">
               <span className="material-symbols-outlined text-sm text-gray-500">
@@ -110,13 +117,17 @@ export default function SideNavBar({ onSectionChange }) {
               <span className="material-symbols-outlined text-sm text-gray-500">
                 folder
               </span>
-              <p className="text-gray-400 text-[10px] font-mono-data">Applications</p>
+              <p className="text-gray-400 text-[10px] font-mono-data">
+                Applications
+              </p>
             </div>
             <div className="flex items-center gap-2 px-2 py-1 cursor-pointer hover:bg-[#2A2A2A] rounded transition-colors">
               <span className="material-symbols-outlined text-sm text-gray-500">
                 folder
               </span>
-              <p className="text-gray-400 text-[10px] font-mono-data">Archives</p>
+              <p className="text-gray-400 text-[10px] font-mono-data">
+                Archives
+              </p>
             </div>
           </div>
         </div>
