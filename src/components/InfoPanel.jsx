@@ -10,10 +10,10 @@ export default function InfoPanel({ selectedProject, activeSection }) {
           </span>
         </div>
         <div className="p-4">
-          <div className="w-full aspect-square bg-black border border-[#2A2A2A] mb-4 overflow-hidden">
+          <div className="w-full aspect-[3/4] mb-4 overflow-hidden flex items-center justify-center">
             <img
-              className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-300"
-              src="/images/profile.jpg"
+              className="w-full object-contain grayscale hover:grayscale-0 transition-all duration-300"
+              src="/images/profile.png"
               alt="Profile"
             />
           </div>
